@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nirmiti — Player Dashboard</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="app">
+<aside><div class="brand"><b>N</b><span>NIRMITI<small>Game Hub</small></span></div>
+<nav>
+<button data-page="overview">⌂ <i>Overview</i></button>
+<button data-page="leaderboard">♛ <i>Leaderboard</i></button>
+<button data-page="stats">◈ <i>My Stats</i></button>
+<button data-page="players">◎ <i>Players</i></button>
+<button data-page="friends">♡ <i>Friends</i></button>
+<button data-page="settings">⚙ <i>Settings</i></button>
+</nav></aside>
+<main><header><div><label>PLAYER DASHBOARD</label><h1 id="title">Overview</h1></div><div class="profile"><b>S</b><span>Player<small>Online</small></span></div></header>
+
+<section id="overview" class="page active"><div class="hero card"><div><label>WELCOME BACK</label><h2>Your game, your progress.</h2><p>This is the dashboard shell. Game results, playtime, friends and rankings can be connected to the multiplayer server.</p></div><button onclick="go('leaderboard')">View leaderboard</button></div>
+<div class="grid four"><div class="card stat"><label>POINTS</label><strong>0</strong><small>All-time</small></div><div class="card stat"><label>SETS</label><strong>0</strong><small>Unique sets</small></div><div class="card stat"><label>PLAYTIME</label><strong>0h</strong><small>Total</small></div><div class="card stat"><label>GAMES</label><strong>0</strong><small>Completed</small></div></div>
+<div class="grid two"><div class="card"><h3>Recent games</h3><div class="empty">Completed games will appear here.</div></div><div class="card"><h3>Friends</h3><div class="empty">No friends added yet.</div></div></div></section>
+
+<section id="leaderboard" class="page"><div class="card"><label>GLOBAL RANKING</label><h2>Highest points scored</h2><div class="table"><div class="row head"><span>#</span><span>Player</span><span>Games</span><span>Points</span></div><div class="row"><span>1</span><b>—</b><span>—</span><strong>—</strong></div><div class="row"><span>2</span><b>—</b><span>—</span><strong>—</strong></div><div class="row"><span>3</span><b>—</b><span>—</span><strong>—</strong></div><div class="row"><span>4</span><b>—</b><span>—</span><strong>—</strong></div><div class="row"><span>5</span><b>—</b><span>—</span><strong>—</strong></div></div></div></section>
+
+<section id="stats" class="page"><div class="grid two"><div class="card"><label>PERFORMANCE</label><h2>Your statistics</h2><p>Average points / game <b>—</b></p><p>Best score <b>—</b></p><p>Sets / game <b>—</b></p><p>Win rate <b>—</b></p></div><div class="card"><label>TIME</label><h2>Playtime</h2><strong class="big">—</strong><p>Total time and session history will appear here.</p></div></div></section>
+
+<section id="players" class="page"><div class="card"><label>COMMUNITY</label><h2>Find players</h2><input placeholder="Search player name..."><div class="empty">Player search results will appear here.</div></div></section>
+<section id="friends" class="page"><div class="grid two"><div class="card"><label>SOCIAL</label><h2>Friends</h2><button onclick="go('players')">Find players</button><div class="empty">No friends yet.</div></div><div class="card"><label>REQUESTS</label><h2>Friend requests</h2><div class="empty">No pending requests.</div></div></div></section>
+<section id="settings" class="page"><div class="grid two"><div class="card"><label>ACCOUNT</label><h2>Profile</h2><input value="Player"><input placeholder="@username"><button>Save changes</button></div><div class="card"><label>SECURITY</label><h2>Change password</h2><input type="password" placeholder="Current password"><input type="password" placeholder="New password"><input type="password" placeholder="Confirm password"><button>Change password</button></div></div></section>
+</main></div><script src="app.js"></script></body></html>
